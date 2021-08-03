@@ -1,4 +1,4 @@
-Access to GMrepo using R through RESTful APIs
+Access to mBodyMap using R through APIs
 
 ## Table of contents
 <!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
@@ -38,25 +38,13 @@ if( !requireNamespace("httr") ){
   install.packages( "httr" );
 }
 
-## -- install jsonlite
-if( !requireNamespace("jsonlite") ){
-  install.packages( "jsonlite" );
-}
-
-## -- install xml2
-if( !requireNamespace("xml2") ){
-  install.packages( "xml2" );
-}
-
-## -- simply install all of them at once:
-install.packages( c( "httr", "jsonlite", "xml2" ) );
+## -- simply install:
+install.packages( c( "httr" ) );
 ```
 
 Load required libraries:
 ```R
 require("httr");
-require("jsonlite");
-require("xml2");
 ```
 
 ## Body sites
